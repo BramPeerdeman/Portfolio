@@ -1,0 +1,170 @@
+@import url(//db.onlinewebfonts.com/c/6a28a1fb5b77054a12626d0c23c92aa2?family=CeraCY-Bold);
+@font-face {
+  font-family: "CeraCY-Bold";
+  src: url("//db.onlinewebfonts.com/t/6a28a1fb5b77054a12626d0c23c92aa2.eot");
+  src: url("//db.onlinewebfonts.com/t/6a28a1fb5b77054a12626d0c23c92aa2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6a28a1fb5b77054a12626d0c23c92aa2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6a28a1fb5b77054a12626d0c23c92aa2.woff") format("woff"), url("//db.onlinewebfonts.com/t/6a28a1fb5b77054a12626d0c23c92aa2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6a28a1fb5b77054a12626d0c23c92aa2.svg#CeraCY-Bold") format("svg");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: CeraCY-Bold;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#wrapper #left {
+  flex-grow: 1;
+}
+#wrapper #center {
+  display: flex;
+  flex-grow: 2;
+  align-self: center;
+  justify-content: center;
+}
+#wrapper #right {
+  flex-grow: 1;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 50px;
+  text-shadow: 11px 11px 9px rgb(0, 0, 0);
+}
+
+#cover {
+  position: absolute;
+  z-index: 100;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  animation: cover 2s;
+  -webkit-animation: cover 2s;
+  -moz-animation: cover 2s;
+  -o-animation: cover 2s;
+  -ms-animation: cover 2s;
+}
+#cover #ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  border: 3px solid #3c3c3c;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 150px;
+  font-family: CeraCy-Bold;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+#cover #ring:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  border-radius: 50%;
+  -webkit-animation: animateC 2s linear infinite;
+          animation: animateC 2s linear infinite;
+}
+#cover span {
+  display: block;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 50%;
+  width: 50%;
+  height: 4px;
+  background: transparent;
+  transform-origin: left;
+  -webkit-animation: animate 2s linear infinite;
+          animation: animate 2s linear infinite;
+}
+#cover span:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  top: -6px;
+  right: -8px;
+  box-shadow: 0 0 20px #ffffff;
+}
+@-webkit-keyframes animateC {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animateC {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes animate {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+@keyframes cover {
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes cover {
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.naam-sec {
+  display: flex;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */
