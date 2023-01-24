@@ -32,6 +32,8 @@ $transition: all 1s;
 
 //load in
 
+
+
 #cover {
     position: absolute;
     z-index: 100;
@@ -440,6 +442,60 @@ nav #menu li a:hover {
         font-size: 40px;
     }
 }
+/*--------------- woorden slide in --------------- */
+#word1 {
+    position: absolute;
+    left: 100%;
+    top: 85%;
+    padding-left: 5%;
+    transition: left 1s;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+  }
+  #word1 a:link{
+    text-decoration: none;
+  }
+  #word1 a{
+    color: white;
+  }
+  #word1.visible {
+    left: 0;
+  }
+
+
+  #word2 {
+    position: absolute;
+    top: 86.5%;
+    right: 100%;
+    padding-right: 5%;
+    transform: rotate(-90deg); 
+    transition: right 1s;
+  }
+  #word2 a:link{
+    text-decoration: none;
+  }
+  #word2 a{
+    color: white;
+  }
+  #word2.visible {
+    right: 0;
+  }
+
+  .woorden{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  #word1 span{
+    color: #ffe100;
+  }
+
+  #word2 span{
+    color: #ffe100;
+  }
 
 
 
