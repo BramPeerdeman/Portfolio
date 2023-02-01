@@ -3,6 +3,8 @@
     src: url(font/CeraCYBold/CeraCYBold.ttf);
 }
 
+
+
 // colors
 $color-background-light: #fafaf2;
 $color-background-dark: #28282b;
@@ -23,13 +25,35 @@ $transition: all 1s;
     font-family: CeraCY-Bold;
 }
 
+#body{
+    background: no-repeat radial-gradient(circle at 0.1% 0.8%, rgb(50, 50, 50) 3%, rgb(0, 0, 0) 91.6%,);
+}
+
+.panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
 html,
 body {
     width: 100%;
     height: 200%;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
-
+    background: no-repeat radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
     color: #fff !important;
+    
+}
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
 }
 
 .h1 {
@@ -41,41 +65,36 @@ body {
     text-shadow: 11px 11px 9px rgba(0, 0, 0, 1);
 }
 
-//horizontal
-.sticky-parent{
-    height: 700vh;
-  }
-  .sticky{
-    position: sticky;
-    top: 0px;
-    max-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  .dim{
-    display: block;
-    min-width: 50vw;
+.container {
+    width: 400%;
     height: 100vh;
-  }
-  .horizontal{
     display: flex;
-  }
-  .br{
-    outline: solid;
-  }
-  
-  @media (max-width: 620px) {
-    .dim{
-      display: block;
-      min-width: 100vw;
-      height: 100vh;
+    flex-wrap: nowrap;
+}
+
+/* .firstContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: green;
+} */
+
+.lastContainer {
+    display: flex;
+    height: 100vh;
+    background: yellow;
+}
+.element {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: scroll;
+
+    .element::-webkit-scrollbar {
+        display: none;
     }
-  }
-  
-  p{
-    font-size: 10em;
-    text-align: center;
-  }
+}
 
 //load in
 #cover {
@@ -208,19 +227,6 @@ body {
     }
 }
 
-
-
-.whitespace {
-    width: 100%;
-    height: 100px;
-}
-
-@media (max-width: 768px) {
-    .whitespace {
-        display: none;
-    }
-}
-
 /*--------------- typewriter effect --------------- */
 .line {
     width: 24em;
@@ -316,11 +322,11 @@ nav #menu li span {
     color: #ffe100;
 }
 
-nav #brand a span{
+nav #brand a span {
     color: #ffe100;
 }
 
-nav #toggle div span{
+nav #toggle div span {
     color: #ffe100;
 }
 
@@ -441,10 +447,12 @@ nav #menu li a:hover {
 
 /*--------------- hero section --------------- */
 .hero {
+    position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .hero h1 {
@@ -462,57 +470,54 @@ nav #menu li a:hover {
 /*--------------- woorden slide in --------------- */
 #word1 {
     position: absolute;
+    z-index: 1;
     left: 100%;
-    top: 85%;
+    top: 86%;
     padding-left: 5%;
     transition: left 1s;
     writing-mode: vertical-rl;
     text-orientation: sideways-right;
-  }
-  #word1 a:link{
+}
+#word1 a:link {
     text-decoration: none;
-  }
-  #word1 a{
+}
+#word1 a {
     color: white;
-  }
-  #word1.visible {
+}
+#word1.visible {
     left: 0;
-  }
+}
 
-
-  #word2 {
+#word2 {
     position: absolute;
     top: 86.5%;
     right: 100%;
     padding-right: 5%;
-    transform: rotate(-90deg); 
+    transform: rotate(-90deg);
     transition: right 1s;
-  }
-  #word2 a:link{
+}
+#word2 a:link {
     text-decoration: none;
-  }
-  #word2 a{
+}
+#word2 a {
     color: white;
-  }
-  #word2.visible {
+}
+#word2.visible {
     right: 0;
-  }
+}
 
-  .woorden{
+.woorden {
     text-decoration: none;
     color: white;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-  }
+}
 
-  #word1 span{
+#word1 span {
     color: #ffe100;
-  }
+}
 
-  #word2 span{
+#word2 span {
     color: #ffe100;
-  }
-
-
-
+}
