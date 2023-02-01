@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "CeraCY-Bold";
+  src: url(font/CeraCYBold/CeraCYBold.ttf);
+}
 * {
   margin: 0;
   padding: 0;
