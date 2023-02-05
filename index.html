@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="index.scss">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<link rel="stylesheet" href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.css">
+	<!-- <link rel="stylesheet" href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Nova+Mono|Roboto+Condensed" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
@@ -21,6 +21,8 @@
 </head>
 
 <body>
+	<div class="cursor"></div>
+
 	<div id="body">
 		<div id="cover">
 			<div id="ring">Loading
@@ -38,12 +40,12 @@
 				</span>
 
 				<ul id="menu">
-					<li><a href="">projects<span>.</span></a></li>
+					<li><a href="#section1">projects<span>.</span></a></li>
 					<li><a href="">about me<span>.</span></a></li>
 				</ul>
 
 				<div id="toggle">
-					<div class="span">menu<span>.</span></div>
+					<div class="span"><a>menu<span>.</span></a></div>
 				</div>
 			</nav>
 
@@ -54,10 +56,12 @@
 					<li><a href="">about me<span>.</span></a></li>
 				</ul>
 			</div>
-
+			<h2 class="h1 line1 anim-typewriter1">Welkom<span>,</span></h2>
+			<h2 class="h1 line2 anim-typewriter2">mijn naam is</h2>
 			<div class="hero">
+
 				<div class="header">
-					<h1 class="h1 line anim-typewriter">BRAM <br>PEERDEMAN</h1>
+					<h1 class="h1 line anim-typewriter">BRAM PEERDEMAN</h1>
 				</div>
 				<div id="woorden">
 					<div id="word1"><a href="index.html"><span>--</span>projects<span>--</span></a></div>
@@ -68,18 +72,55 @@
 
 
 		<div class="container">
-			<div class="panel">
-				<img src="https://picsum.photos/200/300">
-			</div>
 
-			<section class="panel">
-				<img src="https://picsum.photos/200/300">
+			<section id="section1" class="panel">
+				<div class="content">
+					<div class="content-overlay"></div>
+					<img class="content-image" src="https://source.unsplash.com/HkTMcmlMOUQ" alt="">
+					<div class="content-details fadeIn-bottom fadeIn-left">
+						<h3>JEMOEDER</h3>
+						<p>This is a short description</p>
+					</div>
+				</div>
 			</section>
-			<section class="panel">
-				<img src="https://picsum.photos/200/300">
+
+
+
+			<section id="section2" class="panel">
+				<div class="content">
+
+					<div class="content-overlay"></div>
+					<img class="content-image" src="https://source.unsplash.com/HkTMcmlMOUQ" alt="">
+					<div class="content-details fadeIn-top fadeIn-left ">
+						<h3>JEMOEDER</h3>
+						<p>This is a short description</p>
+					</div>
+
+				</div>
 			</section>
-			<section class="panel">
-				<img src="https://picsum.photos/200/300">
+			<section id="section3" class="panel">
+				<div class="content">
+
+					<div class="content-overlay"></div>
+					<img class="content-image" src="https://source.unsplash.com/HkTMcmlMOUQ" alt="">
+					<div class="content-details fadeIn-bottom fadeIn-left">
+						<h3>JEMOEDER</h3>
+						<p>This is a short description</p>
+					</div>
+
+				</div>
+			</section>
+			<section id="section4" class="panel">
+				<div class="content">
+
+					<div class="content-overlay"></div>
+					<img class="content-image" src="https://source.unsplash.com/HkTMcmlMOUQ" alt="">
+					<div class="content-details fadeIn-top fadeIn-left">
+						<h3>JEMOEDER</h3>
+						<p>This is a short description</p>
+					</div>
+
+				</div>
 			</section>
 		</div>
 		<div class="lastContainer">
