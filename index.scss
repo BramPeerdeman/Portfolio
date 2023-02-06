@@ -55,6 +55,7 @@ body::-webkit-scrollbar {
     img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -245,7 +246,7 @@ body::-webkit-scrollbar {
 
 .anim-typewriter {
     animation: typewriter 6s steps(40) 1s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
-    animation-delay: 6s;
+    animation-delay: 5s;
 }
 
 .anim-typewriter1 {
@@ -461,7 +462,7 @@ nav #menu li a:hover {
     position: absolute;
     top: 40%;
     left: 30%;
-    animation: typewriter2 3s steps(40) 1s 1 normal both, blinkTextCussor2 500ms steps(40) infinite normal;
+    animation: typewriter2 2s steps(40) 1s 1 normal both, blinkTextCussor2 500ms steps(40) infinite normal;
     animation-delay: 3s;
     font-size: 50px;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -500,6 +501,14 @@ nav #menu li a:hover {
     }
 }
 /*--------------- woorden slide in --------------- */
+.woorden {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
 #word1 {
     position: absolute;
     z-index: 1;
@@ -522,6 +531,7 @@ nav #menu li a:hover {
 
 #word2 {
     position: absolute;
+    z-index: 1;
     top: 86.5%;
     right: 100%;
     padding-right: 5%;
@@ -538,13 +548,7 @@ nav #menu li a:hover {
     right: 0;
 }
 
-.woorden {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
+
 
 #word1 span {
     color: #ffe100;
@@ -810,3 +814,128 @@ html:not(html:hover) .cursor::after {
         border-right-color: transparent;
     }
 }
+
+//skillbar
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+section:nth-child(even){
+    background-color: #000000;
+}
+
+.wrap{
+    max-width: 80%;
+    width: 100%;
+}
+.bar{
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.bar .thumb{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background-color: #000;
+    border-radius: 60px;
+    margin-top: 20px;
+}
+.bar span{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(to left, #ff0057, #ffeb3b);
+    border-radius: 50px;
+}
+.bar:nth-child(1) span{
+    width: 60%;
+}
+.bar:nth-child(2) span{
+    width: 40%;
+}
+.bar:nth-child(3) span{
+    width: 50%;
+}
+.bar:nth-child(4) span{
+    width: 55%;
+}
+.bar abbr{
+    width: 50px;
+    display: inline-block;
+    height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: 30px;
+    margin-left: -5px;
+    z-index: 1;
+    background: linear-gradient(to left, #ff0057, #ffe007);
+    box-shadow: 0 5px 30px rgb(255 0 87 / 50%), 0 5px 30px rgb(255 255 59 / 50%);
+}
+.bar:nth-child(1) abbr{
+    left: 60%;
+}
+.bar:nth-child(2) abbr{
+    left: 40%;
+}
+.bar:nth-child(3) abbr{
+    left: 50%;
+}
+.bar:nth-child(4) abbr{
+    left: 55%;
+}
+
+
+//left and right
+
+.left{
+    height: 100%;
+    float: left;
+    width: 50%;
+    border: red solid 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   h1{
+    font-size: 70px;
+   }
+   h3{
+    font-size: 30px;
+   }
+.max{
+    max-width: 800px;
+}
+
+}
+.right{
+    height: 100%;
+    float: right;
+    width: 50%;
+    border: red solid 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+
+
+
+
