@@ -120,8 +120,7 @@ body::-webkit-scrollbar {
   border-top: 3px solid #ffffff;
   border-right: 3px solid #ffffff;
   border-radius: 50%;
-  -webkit-animation: animateC 2s linear infinite;
-          animation: animateC 2s linear infinite;
+  animation: animateC 2s linear infinite;
 }
 #cover span {
   display: block;
@@ -132,8 +131,7 @@ body::-webkit-scrollbar {
   height: 4px;
   background: transparent;
   transform-origin: left;
-  -webkit-animation: animate 2s linear infinite;
-          animation: animate 2s linear infinite;
+  animation: animate 2s linear infinite;
 }
 #cover span:before {
   content: "";
@@ -146,28 +144,12 @@ body::-webkit-scrollbar {
   right: -8px;
   box-shadow: 0 0 20px #ffffff;
 }
-@-webkit-keyframes animateC {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 @keyframes animateC {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes animate {
-  0% {
-    transform: rotate(45deg);
-  }
-  100% {
-    transform: rotate(405deg);
   }
 }
 @keyframes animate {
@@ -179,14 +161,6 @@ body::-webkit-scrollbar {
   }
 }
 @keyframes cover {
-  40% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes cover {
   40% {
     opacity: 1;
   }
@@ -218,15 +192,12 @@ body::-webkit-scrollbar {
 }
 
 .anim-typewriter {
-  -webkit-animation: typewriter 6s steps(40) 1s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
-          animation: typewriter 6s steps(40) 1s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation: typewriter 6s steps(40) 1s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
+  animation-delay: 5s;
 }
 
 .anim-typewriter1 {
-  -webkit-animation: typewriter1 2s steps(40) 1s 1 normal both, blinkTextCussor1 500ms steps(40) infinite normal;
-          animation: typewriter1 2s steps(40) 1s 1 normal both, blinkTextCussor1 500ms steps(40) infinite normal;
+  animation: typewriter1 2s steps(40) 1s 1 normal both, blinkTextCussor1 500ms steps(40) infinite normal;
 }
 
 /*--------------- navigation --------------- */
@@ -427,10 +398,8 @@ nav #menu li a:hover {
   position: absolute;
   top: 40%;
   left: 25%;
-  -webkit-animation: typewriter2 2s steps(40) 1s 1 normal both, blinkTextCussor2 500ms steps(40) infinite normal;
-          animation: typewriter2 2s steps(40) 1s 1 normal both, blinkTextCussor2 500ms steps(40) infinite normal;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation: typewriter2 2s steps(40) 1s 1 normal both, blinkTextCussor2 500ms steps(40) infinite normal;
+  animation-delay: 3s;
   font-size: 50px;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   text-align: center;
@@ -479,8 +448,7 @@ nav #menu li a:hover {
   top: 86%;
   padding-left: 5%;
   transition: left 1s;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   text-orientation: sideways-right;
 }
 
@@ -696,24 +664,12 @@ html:not(html:hover) .cursor::after {
   padding: 0.125rem 0.375rem;
   background: none;
   border-radius: 0.25rem;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
 }
 
 .btn:hover {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-}
-
-@-webkit-keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 9em;
-  }
+  text-decoration-line: none;
 }
 
 @keyframes typewriter {
@@ -724,28 +680,12 @@ html:not(html:hover) .cursor::after {
     width: 9em;
   }
 }
-@-webkit-keyframes typewriter1 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 1.5em;
-  }
-}
 @keyframes typewriter1 {
   from {
     width: 0;
   }
   to {
     width: 1.5em;
-  }
-}
-@-webkit-keyframes typewriter2 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 5.4em;
   }
 }
 @keyframes typewriter2 {
@@ -757,14 +697,6 @@ html:not(html:hover) .cursor::after {
   }
 }
 @media (max-width: 768px) {
-  @-webkit-keyframes typewriter {
-    from {
-      width: 0;
-    }
-    to {
-      width: 9em;
-    }
-  }
   @keyframes typewriter {
     from {
       width: 0;
@@ -773,28 +705,12 @@ html:not(html:hover) .cursor::after {
       width: 9em;
     }
   }
-  @-webkit-keyframes typewriter1 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 2.5em;
-    }
-  }
   @keyframes typewriter1 {
     from {
       width: 0;
     }
     to {
       width: 2.5em;
-    }
-  }
-  @-webkit-keyframes typewriter2 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 9em;
     }
   }
   @keyframes typewriter2 {
@@ -806,14 +722,6 @@ html:not(html:hover) .cursor::after {
     }
   }
 }
-@-webkit-keyframes blinkTextCussor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
 @keyframes blinkTextCussor {
   from {
     border-right-color: rgba(255, 255, 255, 0.75);
@@ -822,23 +730,7 @@ html:not(html:hover) .cursor::after {
     border-right-color: transparent;
   }
 }
-@-webkit-keyframes blinkTextCussor1 {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
 @keyframes blinkTextCussor1 {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-@-webkit-keyframes blinkTextCussor2 {
   from {
     border-right-color: rgba(255, 255, 255, 0.75);
   }
